@@ -59,6 +59,8 @@ The correlation coefficient of this relationship is `r cor(coffee$Altitude, coff
 ```{r echo=FALSE}
 coffee_ggplot <- ggplot(coffee)
 coffee_ggplot + geom_point(aes(x=Year,y=Rating)) + labs(title='Relationship Between Year Produced and Ratings of Coffee',x='Year Made',y='Ratings') + theme_classic()
+
+#This does not look like the appropriate graph to display the relationship between these two variables. I would suggest using a boxplot instead.
 ```
 
 The correlation coefficient of this relationship is `r cor(coffee$Year, coffee$Rating)` meaning that there is no correlation between the year the coffee was produced and how it was rated professionally.
